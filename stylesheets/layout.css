@@ -30,3 +30,21 @@ html, body {
 #nav, #content {
   padding-bottom: 2em; /* same value as footer height */
 }
+
+/* vertical navigation */
+
+#header {
+  height: 60px;
+}
+
+#nav {
+  width: 240px;
+  float: left;
+}
+
+#content {
+  width: 720px;
+  float: right;
+}
+
+#footer { clear: both;}
