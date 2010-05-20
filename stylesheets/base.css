@@ -60,21 +60,21 @@ blockquote,ul,ol {
 }
 
 ul ul, ol ul {
-  margin: 0 0 0 1em;
+  margin: 0 0 0 2em;
 }
 
 ul {
   /* Bringing lists on to the page with breathing room. */
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 ol {
   /* Bringing lists on to the page with breathing room. */
-  margin-left: 1.5em;
+  margin-left: 2em;
 }
 
 ul ol, ol ol {
-  margin: 0 0 0 1.5em;
+  margin: 0 0 0 2em;
 }
 
 ol li, ul ol li {
@@ -89,7 +89,7 @@ ul li {
 
 dl dd {
 	/* Giving UL's LIs generated numbers. */
-	margin-left: 1em;
+	margin-left: 2em;
 }
 
 th,td {
@@ -159,23 +159,23 @@ h1 {
 h2 {
   font-size:2em;
   line-height: 1;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
   font-size: 1.5em;
   line-height: 1.1;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 h4 {
   font-size: 1.2em;
   line-height: 1.2;
-  margin-bottom: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 h5 {
   font-size: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   line-height: 1.3;
 }
