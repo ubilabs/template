@@ -11,14 +11,14 @@ This stylesheet forms part of the Formtastic Rails Plugin
 
 /* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just form.formtastic
 --------------------------------------------------------------------------------------------------*/
-form.formtastic, form.formtastic ul, form.formtastic ol, form.formtastic li, form.formtastic fieldset, form.formtastic legend, form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic p { margin:0; padding:0; }
+form.formtastic, form.formtastic ul, form.formtastic ol, form.formtastic ul ol, form.formtastic li, form.formtastic fieldset, form.formtastic legend, form.formtastic input, form.formtastic textarea, form.formtastic select, form.formtastic p { margin:0; padding:0; }
 form.formtastic fieldset { border:0; }
 form.formtastic em, form.formtastic strong { font-style:normal; font-weight:normal; }
-form.formtastic ol, form.formtastic ul { list-style:none; }
+form.formtastic ol li, form.formtastic ul li, form.formtastic ul ol li { list-style:none; margin: 0;}
 form.formtastic abbr, form.formtastic acronym { border:0; font-variant:normal; }
 form.formtastic input, form.formtastic textarea, form.formtastic select { font-family:inherit; font-size:inherit; font-weight:inherit; }
 form.formtastic input, form.formtastic textarea, form.formtastic select { font-size:100%; }
-form.formtastic legend { margin-bottom:0.5em; }
+form.formtastic legend { margin-bottom:0.5em; padding:0; display: inline-block; *margin: 0 -7px;}
 
 
 /* FIELDSETS & LISTS
@@ -33,6 +33,8 @@ form.formtastic fieldset.buttons, form.formtastic fieldset.buttons li { margin-b
 /* BUTTONS
 --------------------------------------------------------------------------------------------------*/
 
+form.formtastic fieldset.buttons li { clear: none; }
+
 form.formtastic fieldset.buttons li.commit input,
 form.formtastic fieldset ol li.boolean input,
 form.formtastic fieldset ol li.boolean label,
@@ -42,7 +44,7 @@ form.formtastic fieldset ol li.check_boxes fieldset ol li label { cursor: pointe
 
 /* INPUT LIs
 --------------------------------------------------------------------------------------------------*/
-form.formtastic fieldset ol li { margin-bottom:1em; display: block; }
+form.formtastic fieldset ol li { margin-bottom:1em; display: block; clear: both;}
 form.formtastic fieldset ol li {  }
 form.formtastic fieldset ol li.required { }
 form.formtastic fieldset ol li.optional { }
@@ -96,8 +98,8 @@ form.formtastic fieldset ol li.hidden { display:none; }
 
 /* BOOLEAN OVERRIDES
 --------------------------------------------------------------------------------------------------*/
-form.formtastic fieldset ol li.boolean label { display:inline-block; width: 480px; margin-bottom: 0;}
-form.formtastic fieldset ol li.boolean input { margin:0.15em 0.5em 0 0; float:left;}
+form.formtastic fieldset ol li.boolean label { width: 480px; margin-bottom: 0; }
+form.formtastic fieldset ol li.boolean label input { margin-right:0.2em;  }
 
 
 /* RADIO OVERRIDES
@@ -114,7 +116,7 @@ form.formtastic fieldset ol li.radio fieldset ol li label input { margin-right:0
 form.formtastic fieldset ol li.check_boxes { }
 form.formtastic fieldset ol li.check_boxes fieldset legend { margin-bottom:0; }
 form.formtastic fieldset ol li.check_boxes fieldset ol { margin-bottom:-0.6em; }
-form.formtastic fieldset ol li.check_boxes fieldset ol li { margin:0.1em 0 0.5em 0; }
+form.formtastic fieldset ol li.check_boxes fieldset ol li { margin: 0; }
 form.formtastic fieldset ol li.check_boxes fieldset ol li label { float:none; width:100%; }
 form.formtastic fieldset ol li.check_boxes fieldset ol li label input { margin-right:0.2em; }
 
@@ -123,11 +125,11 @@ form.formtastic fieldset ol li.check_boxes fieldset ol li label input { margin-r
 --------------------------------------------------------------------------------------------------*/
 form.formtastic fieldset ol li.date fieldset legend,
 form.formtastic fieldset ol li.time fieldset legend,
-form.formtastic fieldset ol li.datetime fieldset legend { margin: 0;}
+form.formtastic fieldset ol li.datetime fieldset legend { margin: 0; *margin: 0 -7px;}
 
 form.formtastic fieldset ol li.date fieldset ol li,
 form.formtastic fieldset ol li.time fieldset ol li,
-form.formtastic fieldset ol li.datetime fieldset ol li { float:left; width:auto; margin:0 .3em 0 0; }
+form.formtastic fieldset ol li.datetime fieldset ol li { float:left; width:auto; margin:0 .3em 0 0; clear: none;}
 
 form.formtastic fieldset ol li.date fieldset ol li label,
 form.formtastic fieldset ol li.time fieldset ol li label,
