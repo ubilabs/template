@@ -67,7 +67,7 @@ form.formtastic fieldset ol li fieldset ol li { padding:0; border:0; }
 
 /* INLINE HINTS
 --------------------------------------------------------------------------------------------------*/
-form.formtastic fieldset ol li p.inline-hints { color:#666; margin-top:0.5em; }
+form.formtastic fieldset ol li p.inline-hints { color:#666; margin-top:0.25em; font-style: italic;}
 
 
 /* INLINE ERRORS
@@ -112,6 +112,7 @@ form.formtastic fieldset ol li.radio fieldset ol li label input { margin-right:0
 /* CHECK BOXES (COLLECTION) OVERRIDES
 --------------------------------------------------------------------------------------------------*/
 form.formtastic fieldset ol li.check_boxes { }
+form.formtastic fieldset ol li.check_boxes fieldset legend { margin-bottom:0; }
 form.formtastic fieldset ol li.check_boxes fieldset ol { margin-bottom:-0.6em; }
 form.formtastic fieldset ol li.check_boxes fieldset ol li { margin:0.1em 0 0.5em 0; }
 form.formtastic fieldset ol li.check_boxes fieldset ol li label { float:none; width:100%; }

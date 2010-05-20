@@ -38,6 +38,38 @@
               <li class="string">
                 <label for="i2">Optional</label>
                 <input id="i2" maxlength="255" name="i2" size="50" type="text" />
+                <p class="inline-hints">An inline hint.</p>
+              </li>
+              
+              <li class="check_boxes optional">
+                <fieldset>
+                  <legend class="label">
+                    <label for="c1">Benutzerrollen</label>
+                  </legend>
+                  <ol>
+                    <li>
+                      <label for="c1">
+                        <input name="c1" type="hidden" value="" />
+                        <input checked="checked" id="c1" name="c1" type="checkbox" value="c2" /> 
+                        Checkbox #1
+                      </label>
+                    </li>
+                    <li>
+                      <label for="c2">
+                        <input name="c2" type="hidden" value="" />
+                        <input id="c2" name="c2" type="checkbox" value="c2" /> 
+                        Checkbox #2
+                      </label>
+                    </li>
+                    <li>
+                      <label for="c3">
+                        <input name="c3" type="hidden" value="" />
+                        <input id="c3" name="c3" type="checkbox" value="c3" /> 
+                        Checkbox #3
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
               </li>
               
               <li class="text">
@@ -45,8 +77,13 @@
                 <textarea cols="40" id="i3" name="i3" rows="8"></textarea>
               </li>
               
+              <li class="file">
+                <label for="f1">Image</label>
+                <input id="f1" name="f1" type="file" />
+              </li>
+              
               <li class="boolean">
-                <label for="i4">Checkbox</label>
+                <label for="i4">Single Checkbox</label>
                 <input name="i4" type="hidden" value="0" /> 
                 <input id="i4" name="i4" type="checkbox" value="1" />
               </li>
@@ -100,6 +137,9 @@
             <ol>
               <li class="commit">
                 <input name="submit" type="submit" value="Submit">
+              </li>
+              <li>
+                or <a href="#">cancel</a>
               </li>
             </ol>
           </fieldset>
