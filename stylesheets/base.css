@@ -6,11 +6,27 @@
  */
 
 body {
-  line-height: 1.3;
+	font: 87.5% Arial, Helvetica, sans-serif;
+	line-height: 1.5;
 }
 
-html, body {
-  font-family: Arial,sans-serif;
+/* nudge down to get to 13px equivalent for these form elements */ 
+select, input, button, textarea, button {
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+/* help tables remember to inherit */
+table {
+	font-size:inherit;
+	font:100%;
+}
+
+/* Bump up IE to get to 13px equivalent for these fixed-width elements */
+pre, code, kbd, samp, tt {
+	font-family: monospace;
+	font-size: 120%;
+	*font-size: 109%;
+	line-height: 1;
 }
 
 p, fieldset, table, pre, h3, h4, h5 {
@@ -95,7 +111,7 @@ caption {
 }
 
 sup, sub {
-  font-size: 0.75em;
+  font-size: smaller;
 }
 
 sub {
