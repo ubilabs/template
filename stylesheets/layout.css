@@ -9,3 +9,24 @@ body {
   margin: auto;
   text-align: left;
 }
+
+/* sticky foooter */
+
+html, body {
+  height: 100%;
+}
+
+#footer {
+  height: 2em;
+}
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -2em; /* negative value of footer height */
+}
+
+#nav, #content {
+  padding-bottom: 2em; /* same value as footer height */
+}
