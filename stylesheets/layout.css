@@ -47,7 +47,19 @@ html, body {
   float: right;
 }
 
-#footer { clear: both;}
+#footer { 
+  clear: both;
+}
+
+/* navigation styles */
+
+#nav ul { 
+  margin: 0;
+}
+
+#nav ul li { 
+  list-style: none;
+}
 
 /* indicator colors */
 
