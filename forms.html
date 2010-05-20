@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>Ubilabs HTML Form Template</title>
+  	<link href="stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+  	<link href="stylesheets/base.css" media="all" rel="stylesheet" type="text/css" />
+  	<link href="stylesheets/form.css" media="all" rel="stylesheet" type="text/css" />
+  	<link href="stylesheets/layout.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Ubilabs HTML Template</h1>
+      </div>
+      <div id="nav">
+        <ul>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+          <li><a href="#">Four</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <form action="/books" class="formtastic" method="post">
+          <fieldset class="inputs">
+            <ol>
+              
+              <li class="select required">
+                <label for="i1">Title<abbr title="required">*</abbr></label> 
+                <select id="i1" name="i1">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </li>
+              
+              <li class="string">
+                <label for="i2">Optional</label>
+                <input id="i2" maxlength="255" name="i2" size="50" type="text" />
+              </li>
+              
+              <li class="text">
+                <label for="i3">Text Area</label> 
+                <textarea cols="40" id="i3" name="i3" rows="8"></textarea>
+              </li>
+              
+              <li class="boolean">
+                <label for="i4">Checkbox</label>
+                <input name="i4" type="hidden" value="0" /> 
+                <input id="i4" name="i4" type="checkbox" value="1" />
+              </li>
+              
+              <li class="date">
+                <fieldset>
+                  <legend class="label"><label for="i5">Date Field</label></legend>
+                  <ol>
+                    <li>
+                      <label for="i5">Year</label> 
+                      <select id="i5" name="i5">
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option selected="selected" value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="i6">Month</label> 
+                      <select id="i6" name="i6">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option selected="selected" value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="i7">Day</label>
+                      <select id="i7" name="i7">
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option selected="selected" value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                      </select>
+                    </li>
+                  </ol>
+                </fieldset>
+              </li>
+              
+              <li class="boolean">
+                <label for="i8">I have read and agree with the terms and conditions. I have read and agree with the terms and conditions</label>
+                <input name="i8" type="hidden" value="0" /> 
+                <input id="i8" name="i4" type="checkbox" value="1" />
+              </li>
+            </ol>
+          </fieldset>
+          <fieldset class="buttons">
+            <ol>
+              <li class="commit">
+                <input name="submit" type="submit" value="Submit">
+              </li>
+            </ol>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      A sticky footer.
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/application.js" type="text/javascript"></script>
+  </body>
+</html>
