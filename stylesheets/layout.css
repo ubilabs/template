@@ -48,3 +48,11 @@ html, body {
 }
 
 #footer { clear: both;}
+
+/* indicator colors */
+
+#wrapper { background-color: #FFE;}
+#header  { background-color: #EEE;}
+#footer  { background-color: #FEE;}
+#content { background-color: #EEF;}
+#nav     { background-color: #EFE;}
