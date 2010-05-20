@@ -1,0 +1,11 @@
+/* centered fixed layout */
+
+body {
+  text-align: center;
+}
+
+#wrapper, #footer {
+  width: 960px;
+  margin: auto;
+  text-align: left;
+}
