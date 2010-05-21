@@ -74,9 +74,10 @@ form.formtastic fieldset ol li p.inline-hints { color:#666; margin-top:0.25em; f
 
 /* INLINE ERRORS
 --------------------------------------------------------------------------------------------------*/
-form.formtastic fieldset ol li p.inline-errors { color:#cc0000; margin-top:0.5em; }
+form.formtastic fieldset ol li p.inline-errors { color:#cc0000; margin:0.25em 0 0 0; }
 form.formtastic fieldset ol li ul.errors { color:#cc0000; margin-top:0.5em; list-style:square; }
 form.formtastic fieldset ol li ul.errors li { padding:0; border:none; display:list-item; }
+form.formtastic fieldset ol li.error input, form.formtastic fieldset ol li.error textarea { border: 1px solid #C00; }
 
 
 /* STRING & NUMERIC OVERRIDES
@@ -89,7 +90,6 @@ form.formtastic fieldset ol li.numeric input { width:240px; }
 /* TEXTAREA OVERRIDES
 --------------------------------------------------------------------------------------------------*/
 form.formtastic fieldset ol li.text textarea { width:480px; }
-
 
 /* HIDDEN OVERRIDES
 --------------------------------------------------------------------------------------------------*/
