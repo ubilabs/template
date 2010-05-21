@@ -1,41 +1,440 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  	<title>Ubilabs HTML Template</title>
-  	<link href="stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
-  	<link href="stylesheets/base.css" media="all" rel="stylesheet" type="text/css" />
-  	<link href="stylesheets/layout.css" media="screen" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="header">
-        <h1>Ubilabs HTML Template</h1>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Ubilabs CSS Test Page</title>
+  <link href="stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/base.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/layout.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="header">
+      <h1>Ubilabs CSS Test Page</h1>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#misc">Misc</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Tests for common HTML elements</h2>
+      
+      <div id="section">
+        <a href="#" id="toggle">Toggle content to see sticky footer behaviour.</a>
       </div>
-      <div id="nav">
+      
+      <div id="layout" class="section">
+        <h3>Layout</h3>
+        The current layout of this document:
+        <pre>&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;div id=&quot;inner&quot;&gt;
+    &lt;div id=&quot;header&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;nav&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;content&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footer&quot;&gt;&lt;/div&gt;</pre>
+      </div>
+      
+      <div id="paragraphs" class="section">
+        <h3>Paragraphs</h3>
+        <div>    
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+            ad minim veniam, quis <em>nostrud exercitation ullamco</em> laboris 
+            aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            reprehenderit in voluptate velit <strong>esse cillum</strong> dolore
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Ut enim ad minim veniam, lorem ipsum dolor ipsum dolor sit amet, 
+            consectetur sed eiusmod aliquip ex ea tempor <sub>sub text</sub> 
+            ut labore et <sup>sup text</sup> ad minim veniam, quis nostrud  
+            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+            irure dolor in <code>{{dolore}}</code> in voluptate velit esse eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+            minim veniam, quis nostrud exercitation ullamco laboris nisi aliquip 
+            ex ea commodo consequat.
+          </blockquote>
+          <p>
+            Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.
+          </p>
+        </div>
+      </div>
+      
+      <div id="lists" class="section">
+        <h3>Lists</h3>
+
         <ul>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
+          <li>Unordered list test</li>
+          <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          <li>Yet another element in the list</li>
+          <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
         </ul>
+        
+        <ol>
+          <li>Ordered list test</li>
+          <li>Another list element</li>
+          <li>Yet another element in the list</li>
+        </ol>
+
+        <ol>
+          <li>Ordered list</li>
+          <li>Here's a nested unordered list
+            <ul>
+              <li>Nested Unordered list</li>
+              <li>Nested ordered list
+                <ol>
+                  <li>The first</li>
+                  <li>And the second</li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+          <li>Ordered List item</li>
+          <li>
+            Nested Ordered list
+            <ol>
+              <li>Some point</li>
+              <li>Nested Unordered list
+                <ul>
+                  <li>The first</li>
+                  <li>And the second</li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+        </ol>
+
+        <dl>
+          <dt>definition list dt</dt>
+          <dd>definition list dd</dd>
+          <dt>definition list dt</dt>
+          <dd>definition list dd</dd>
+        </dl>      
+        <dl>
+          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna aliqua elit adipisicing elit adipisicing elit</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna aliqua elit adipisicing elit adipisicing elit</dd>
+          <dt>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna aliqua elit adipisicing elit adipisicing elit</dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna aliqua elit adipisicing elit adipisicing elit</dd>
+        </dl>      
       </div>
-      <div id="content">
+      
+      <div id="headings" class="section">
+      <h3>Headings</h3>
+      
+        <div>    
+          <h2>H2: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing</h2>
+          <h3>H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing tempor incididunt</h3>
+          <h4>H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing tempor incididunt consectetur adipisicing</h4>
+          <h5>H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit tempor incididunt consectetur adipisicing consectetur adipisicing </h5>
+        </div>
+        <hr />
+        <div>
+          <p>h2 should be used on top of #content only!</p>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+        </div>
+      </div>
+      
+      <div id="misc" class="section">
+        <h3>Misc elements</h3>
+  
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-          aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum.
+          <strong>&lt;strong&gt;</strong><br/>
+          <del>&lt;del&gt; deleted</del><br/>
+          <dfn>&lt;dfn&gt; dfn</dfn><br/>
+          <em>&lt;em&gt; emphasis</em><br/>
+          <b>&lt;b&gt; deprecated</b><br/>
+          <i>&lt;i&gt; deprecated</i>
         </p>
+      
+        <p>
+          <a>&lt;a&gt; anchor</a><br/>
+          <a href="http://www.google.com">&lt;a&gt; a + href</a>
+        </p>
+        <p>
+          <abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr><br/>
+          <acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym>
+        </p>
+        <address>
+          &lt;address&gt;<br/>
+          Donald Duck<br/>
+          Box 555<br/>
+          Disneyland
+        </address>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
+      </div>
+      
+      <div id="tables" class="section">
+        <table summary="This is the summary text for this table.">
+          <caption>A standard test table with a caption, tr, td elements</caption>
+          <tr>
+            <th>Table Header One</th>
+            <th>Table Header Two</th>
+          </tr>
+          <tr>
+            <td>TD One</td>
+            <td>TD Two</td>
+          </tr>
+          <tr>
+            <td colspan="2">TD colspan 2</td>
+          </tr>
+        </table>
+        
+        <table summary="This is the summary text for this table.">
+          <caption>A test table with a thead, tfoot, and tbody elements</caption>
+          <thead>
+            <tr>
+              <th>Table Header One</th>
+              <th>Table Header Two</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="2">tfoot footer</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>TD One</td>
+              <td>TD Two</td>
+            </tr>
+            <tr>
+              <td>TD One</td>
+              <td>TD Two</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>TD One</td>
+              <td>TD Two</td>
+            </tr>
+            <tr>
+              <td>TD One</td>
+              <td>TD Two</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div id="code" class="section">
+  
+<pre>&lt;pre&gt;
+pre  space1
+pre  space1
+pre    space2
+pre    space2
+pre  tab
+pre  tab</pre>
+
+<code>&lt;code&gt;
+Not indented
+  indent1
+  indent1
+    indent2
+      indent3</code>
+
+      <tt>&lt;tt&gt;
+      This tt text should be monospaced
+        and 
+        wrap as if 
+          one line of text
+            even though the code has newlines, spaces, and tabs. 
+      It should be the same size as &lt;p&gt; text.
+      </tt>
+      
+      </div>
+      
+      <div id="forms" class="section">
+      
+      <h3>Form styles</h3>
+      
+        <form action="forms.html" class="formtastic" method="get">
+          <fieldset class="inputs">
+            <ol>
+            
+              <li class="select required">
+                <label for="i1">Options<abbr title="required">*</abbr></label> 
+                <select id="i1" name="i1">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </li>
+            
+              <li class="string required error" id="e1">
+                <label for="e1">Field with error</label>
+                <input id="e1" maxlength="255" name="e1" size="50" type="text" value="" />
+                <p class="inline-errors">Error message goes here.</p>
+              </li>
+            
+              <li class="string">
+                <label for="i2">Optional</label>
+                <input id="i2" maxlength="255" name="i2" size="50" type="text" />
+                <p class="inline-hints">An inline hint.</p>
+              </li>
+            
+              <li class="check_boxes optional">
+                <fieldset><legend class="label">
+                    <label for="c1">Checkboxes</label>
+                  </legend>
+                  <ol>
+                    <li>
+                      <label for="c1">
+                        <input name="c1" type="hidden" value="" />
+                        <input checked="checked" id="c1" name="c1" type="checkbox" value="c2" /> 
+                        Checkbox #1
+                      </label>
+                    </li>
+                    <li>
+                      <label for="c2">
+                        <input name="c2" type="hidden" value="" />
+                        <input id="c2" name="c2" type="checkbox" value="c2" /> 
+                        Checkbox #2
+                      </label>
+                    </li>
+                    <li>
+                      <label for="c3">
+                        <input name="c3" type="hidden" value="" />
+                        <input id="c3" name="c3" type="checkbox" value="c3" /> 
+                        Checkbox #3
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </li>
+            
+              <li class="text">
+                <label for="i3">Text Area</label> 
+                <textarea cols="40" id="i3" name="i3" rows="8"></textarea>
+              </li>
+            
+              <li class="file">
+                <label for="f1">File input</label>
+                <input id="f1" name="f1" type="file" />
+              </li>
+            
+              <li class="boolean">
+                <label for="b1">
+                  <input name="b1" type="hidden" value="0" />
+                  <input id="b1" name="b1" type="checkbox" value="1" />
+                  Boolean options
+                </label>
+              </li>
+            
+              <li class="radio">
+                <fieldset>
+                  <legend class="label">
+                    <label for="r1">Options</label>
+                  </legend>
+                  <ol>
+                    <li>
+                      <label for="r1">
+                        <input id="r1" name="r1" type="radio" value="1" /> 
+                        Option 1
+                      </label>
+                    </li>
+                    <li>
+                      <label for="r2">
+                        <input id="r2" name="r1" type="radio" value="2" /> 
+                        Option 2
+                      </label>
+                    </li>
+                    <li>
+                      <label for="r3">
+                        <input id="r3" name="r1" type="radio" value="3" /> 
+                        Option 3
+                      </label>
+                    </li>
+                  </ol>
+                </fieldset>
+              </li>                    
+            
+              <li class="date">
+                <fieldset><legend class="label"><label for="i5">Date Field</label></legend>
+                  <ol>
+                    <li>
+                      <label for="i5">Year</label> 
+                      <select id="i5" name="i5">
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option selected="selected" value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="i6">Month</label> 
+                      <select id="i6" name="i6">
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option selected="selected" value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                      </select>
+                    </li>
+                    <li>
+                      <label for="i7">Day</label>
+                      <select id="i7" name="i7">
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option selected="selected" value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                      </select>
+                    </li>
+                  </ol>
+                </fieldset>
+              </li>
+
+              <li class="boolean">
+                <label for="i8">
+                  <input name="i8" type="hidden" value="0" /> 
+                  <input id="i8" name="i4" type="checkbox" value="1" />
+                  I have read and agree with the terms and conditions. I have read and agree with the terms and conditions.
+                </label>
+              </li>
+            </ol>
+          </fieldset>
+          <fieldset class="buttons">
+            <ol>
+              <li class="commit">
+                <input name="submit" type="submit" value="Submit">
+              </li>
+              <li>
+                or <a href="#">cancel</a>
+              </li>
+            </ol>
+          </fieldset>
+        </form>
       </div>
     </div>
-    <div id="footer">
-      A sticky footer.
-    </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-    <script src="javascripts/application.js" type="text/javascript"></script>
-  </body>
+  </div>
+  <div id="footer">
+    A sticky footer.
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <script src="javascripts/application.js" type="text/javascript"></script>
+</body>
 </html>
