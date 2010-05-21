@@ -27,6 +27,28 @@ html, body {
   margin-bottom: -2em; /* negative value of footer height */
 }
 
+* #wrapper {
+  height: 1%;
+  overflow: visible;
+}
+
+/** @css-for IE7 */
+*+html #wrapper {
+  min-height: 1%;
+}
+
+/** @css-for all browsers except lte IE7 */
+#wrapper:after {
+  clear: both;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+
 #nav, #content {
   padding-bottom: 2em; /* same value as footer height */
 }
@@ -63,14 +85,6 @@ html, body {
 
 /* content padding */
 
-body { 
-  background-color: #CCC; 
-}
-
-#footer, #wrapper { 
-  background-color: #FFF; 
-}
-
 #header, #footer, #nav, #content {
   padding: 0 10px;
 }
@@ -89,7 +103,9 @@ body {
 
 /* indicator colors */
 
-#header  { background-color: #EEE;}
-#footer  { background-color: #FEE;}
-#content { background-color: #EEF;}
-#nav     { background-color: #EFE;}
+body     { background-color: #CCC; }
+#wrapper { background-color: #EEF; }
+#header  { background-color: #EEE; }
+#footer  { background-color: #EEE; }
+#content { background-color: #FFF; }
+#nav     { background-color: #FEE; }
