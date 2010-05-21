@@ -17,27 +17,17 @@ html, body {
 }
 
 #footer {
-  height: 2em;
+  height: 30px;
+  position: relative;
 }
 
 #wrapper {
   min-height: 100%;
   height: auto !important;
-  height: 100%;
-  margin-bottom: -2em; /* negative value of footer height */
+  margin-bottom: -30px; /* negative value of footer height */
 }
 
-* #wrapper {
-  height: 1%;
-  overflow: visible;
-}
-
-/** @css-for IE7 */
-*+html #wrapper {
-  min-height: 1%;
-}
-
-/** @css-for all browsers except lte IE7 */
+/** clearfix for firefox */
 #wrapper:after {
   clear: both;
   content: " ";
@@ -48,9 +38,8 @@ html, body {
   visibility: hidden;
 }
 
-
 #nav, #content {
-  padding-bottom: 2em; /* same value as footer height */
+  padding-bottom: 40px; /* footer height plus extra spacing */
 }
 
 /* vertical navigation */
@@ -86,7 +75,8 @@ html, body {
 /* content padding */
 
 #header, #footer, #nav, #content {
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #nav { 
