@@ -96,3 +96,9 @@ form.formtastic fieldset ol li.datetime fieldset ol li label { display:none; }
 form.formtastic fieldset ol li.date fieldset ol li label input, 
 form.formtastic fieldset ol li.time fieldset ol li label input, 
 form.formtastic fieldset ol li.datetime fieldset ol li label input { display:inline; margin:0; padding:0; }
+
+/* flash messages */
+
+.flash_alert, .flash_error, .flash_failure, .flash_notice { margin-bottom: 0.5em; line-height:1; padding: 0.5em; display: inline-block;}
+.flash_alert, .flash_error, .flash_failure { background-color: #C00; color: #FFF; }
+.flash_notice { background-color: #99FF33; }
