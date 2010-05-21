@@ -66,6 +66,10 @@ form.formtastic fieldset ol li fieldset legend span { }
 form.formtastic fieldset ol li fieldset ol { }
 form.formtastic fieldset ol li fieldset ol li { padding:0; border:0; }
 
+/* INPUT AND TEXTAREA STYLES */
+
+form.formtastic fieldset ol li.string input, form.formtastic fieldset ol li.password input, form.formtastic fieldset ol li.numeric input, form.formtastic fieldset ol li.text textarea { border: 1px solid #0f2347; padding: 2px; }
+form.formtastic fieldset ol li.string input:focus, form.formtastic fieldset ol li.password input:focus, form.formtastic fieldset ol li.numeric input:focus, form.formtastic fieldset ol li.text textarea:focus { border-width: 2px; padding: 1px;}
 
 /* INLINE HINTS
 --------------------------------------------------------------------------------------------------*/
