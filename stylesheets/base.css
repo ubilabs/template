@@ -24,8 +24,8 @@ table {
 /* Bump up IE to get to 13px equivalent for these fixed-width elements */
 pre, code, kbd, samp, tt {
 	font-family: monospace;
-	font-size: 120%;
-	*font-size: 109%;
+	font-size: 115%;
+	*font-size: 107%;
 	line-height: 1;
 }
 
