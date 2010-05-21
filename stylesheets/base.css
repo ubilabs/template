@@ -12,7 +12,7 @@ body {
 
 /* nudge down to get to 13px equivalent for these form elements */ 
 select, input, button, textarea, button {
-	font:99% arial,helvetica,clean,sans-serif;
+	font: 99% arial,helvetica,clean,sans-serif;
 }
 
 /* help tables remember to inherit */
